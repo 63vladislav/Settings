@@ -13,6 +13,8 @@
 		82956F9A2BB02EE900F916E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82956F982BB02EE900F916E8 /* Main.storyboard */; };
 		82956F9C2BB02EEA00F916E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82956F9B2BB02EEA00F916E8 /* Assets.xcassets */; };
 		82956F9F2BB02EEA00F916E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82956F9D2BB02EEA00F916E8 /* LaunchScreen.storyboard */; };
+		82956FA72BB040D900F916E8 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82956FA62BB040D900F916E8 /* SettingTableViewCell.swift */; };
+		82956FA92BB1AD6100F916E8 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82956FA82BB1AD6100F916E8 /* SwitchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		82956F9B2BB02EEA00F916E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82956F9E2BB02EEA00F916E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82956FA02BB02EEA00F916E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82956FA62BB040D900F916E8 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		82956FA82BB1AD6100F916E8 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				82956F922BB02EE800F916E8 /* AppDelegate.swift */,
 				82956F942BB02EE900F916E8 /* SceneDelegate.swift */,
 				82956F962BB02EE900F916E8 /* ViewController.swift */,
+				82956FA62BB040D900F916E8 /* SettingTableViewCell.swift */,
+				82956FA82BB1AD6100F916E8 /* SwitchTableViewCell.swift */,
 				82956F982BB02EE900F916E8 /* Main.storyboard */,
 				82956F9B2BB02EEA00F916E8 /* Assets.xcassets */,
 				82956F9D2BB02EEA00F916E8 /* LaunchScreen.storyboard */,
@@ -140,6 +146,8 @@
 			files = (
 				82956F972BB02EE900F916E8 /* ViewController.swift in Sources */,
 				82956F932BB02EE900F916E8 /* AppDelegate.swift in Sources */,
+				82956FA92BB1AD6100F916E8 /* SwitchTableViewCell.swift in Sources */,
+				82956FA72BB040D900F916E8 /* SettingTableViewCell.swift in Sources */,
 				82956F952BB02EE900F916E8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,9 +310,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = none.Settings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +341,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = none.Settings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
