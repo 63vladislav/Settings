@@ -12,6 +12,7 @@ class SwitchTableViewCell: UITableViewCell {
     static let indentifier = "SwitchTableViewCell"
     
     private let iconConteiner: UIView = {
+        
         let view = UIView()
         view.clipsToBounds = true
         view.layer.cornerRadius = 8
@@ -20,6 +21,7 @@ class SwitchTableViewCell: UITableViewCell {
     }()
     
     private let iconImageView: UIImageView = {
+        
         let imageView = UIImageView()
         imageView.tintColor = .white
         imageView.contentMode = .scaleAspectFit
@@ -27,24 +29,26 @@ class SwitchTableViewCell: UITableViewCell {
     }()
     
     private let label: UILabel = {
+        
         let label = UILabel()
         label.numberOfLines = 1
         return label
     }()
     
     private let theSwitch: UISwitch = {
+        
         let theSwitch = UISwitch()
         theSwitch.onTintColor = .systemBlue
         return theSwitch
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(label)
         contentView.addSubview(iconConteiner)
         contentView.addSubview(theSwitch)
         iconConteiner.addSubview(iconImageView)
-        
         contentView.clipsToBounds = true
         accessoryType = .none
 
@@ -55,9 +59,14 @@ class SwitchTableViewCell: UITableViewCell {
     }
     
     override func layoutSubviews() {
+        
         super.layoutSubviews()
         let size: CGFloat = contentView.frame.size.height - 12
-        iconConteiner.frame = CGRect(x: 15, y: 6, width: size, height: size)
+        iconConteiner.frame = CGRect(
+            x: 15,
+            y: 6,
+            width: size,
+            height: size)
         
         let imageSize: CGFloat = size/1.5
         iconImageView.frame = CGRect(
@@ -82,6 +91,7 @@ class SwitchTableViewCell: UITableViewCell {
     }
     
     override func prepareForReuse() {
+        
         super.prepareForReuse()
         iconImageView.image = nil
         label.text = nil
@@ -90,6 +100,7 @@ class SwitchTableViewCell: UITableViewCell {
     }
     
     public func configure( with model: SettingSwitchOption) {
+        
         label.text = model.title
         iconImageView.image = model.icon
         iconConteiner.backgroundColor = model.iconBackgroundColour
